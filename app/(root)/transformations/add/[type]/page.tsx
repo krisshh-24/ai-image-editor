@@ -12,7 +12,7 @@ const AddTransformationPage= async({ params : {type}}:SearchParamProps) => {
 if(!userId){
   redirect('/sign-in')
 }
-  let user;
+let user
   try {
     user = await getUserById(userId);
   } catch (error) {
