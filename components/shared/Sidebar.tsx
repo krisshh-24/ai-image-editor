@@ -12,7 +12,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden h-screen w-64 bg-[#121212] p-6 shadow-md shadow-black/50 lg:flex flex-col justify-between">
+    <aside className="hidden min-h-screen w-64 bg-black p-6 shadow-md shadow-black/50 lg:flex flex-col justify-between">
       <div>
         {/* Logo */}
         <Link href="/" className="flex items-center mb-10">
@@ -22,7 +22,7 @@ const Sidebar = () => {
             width={160}
             height={30}
             priority
-            className="ml-3"
+            className="ml-3 hover:scale-105 transition-transform"
           />
         </Link>
 
@@ -113,7 +113,7 @@ const Sidebar = () => {
 
       {/* Footer */}
       <div className="text-gray-500 text-xs mt-10 text-center">
-        © {new Date().getFullYear()} YourApp
+        © {new Date().getFullYear()} Smartcut AI
       </div>
     </aside>
   );
